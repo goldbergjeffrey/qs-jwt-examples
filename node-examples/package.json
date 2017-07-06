@@ -1,0 +1,36 @@
+{
+  "name": "qs-jwt-examples-node",
+  "version": "1.0.0",
+  "description": "Node example for JSON web token authentication with Qlik Sense.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldbergjeffrey/qs-jwt-examples.git"
+  },
+  "keywords": [
+    "node",
+    "qliksense",
+    "qlik",
+    "sense",
+    "jwt",
+    "authentication"
+  ],
+  "author": "Jeffrey Goldberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldbergjeffrey/qs-jwt-examples/issues"
+  },
+  "homepage": "https://github.com/goldbergjeffrey/qs-jwt-examples#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "extend": "^3.0.1",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
+    "path": "^0.12.7"
+  }
+}

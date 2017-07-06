@@ -1,0 +1,52 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 45px 45px 0;
+}
+
+.qvplaceholder,
+.qvobject {
+    flex: 1 1 auto;
+    height: 300px;
+    min-width: 400px;
+    margin: 45px 0 0 45px;
+}
+
+#popup {
+    background-color: #c3534b;
+    color: #FFFFFF;
+    position: fixed;
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    display: none;
+    border-radius: 5px;
+    z-index: 6;
+    font-family: sans-serif;
+}
+
+.close {
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    position: absolute;
+    right: 9px;
+    top: 7px;
+}
+
+.close:hover {
+    opacity: .5;
+}
+
+#popupText {
+    margin-right: 23px;
+}
