@@ -33,4 +33,4 @@ A sample jwt token may look like this:
 }
 ```
 
-## [Node Examples](node-examples/readme.md)
+## [Node Examples](node-examples/README.md)
