@@ -33,4 +33,11 @@ A sample jwt token may look like this:
 }
 ```
 
+9. If additional attributes are sent in the token, add them to the additional attributes section.  On the left side is the name of the attribute in the token, and on the right side is the name of the attribute Qlik Sense will use.  In most cases it's easiest to leave them the same.
+
+10. Click on the Advanced menu option on the right side of the screen.
+
+11. In the Advanced section, options may be filled out to support a given scenario.
+    A. **For the mashup scenario**: Set the session cookie domain to the domain used for the mashup server and Qlik Sense server. By default , the Qlik Sense server will set the cookie domain to the fully qualified name of the white listed hostname the browser is accessing Qlik Sense. 
+
 ## [Node Examples](node-examples/README.md)
