@@ -1,14 +1,21 @@
 # Configure json web token virtual proxy
 
+>   ![jwt1](img/jwt1.png)
 1. From the QMC, click on the Virtual proxies menu item in the Configure System section.
 
 2. Click the Create new button on the bottom of the screen.
+
+>   ![jwt2](img/jwt2.png)
+>   *Refer with steps 3-5*
 
 3. In the Identification section, enter a description and a prefix for the new virtual proxy.  For this example, enter **jwt** for the description and the prefix.
 
 4. For the session cookie header name, update the name of the cookie with **-jwt** appended to the end so it appears as ***X-Qlik-Session-jwt***. 
 
 5. Click on the Authentication menu item on the right side of the screen.
+
+>   ![jwt3](img/jwt3.png)
+>   *Refer with steps 6-9*
 
 6. For the authentication method of the virtual proxy, select *jwt* from the drop down menu.
 
@@ -32,6 +39,9 @@ A sample jwt token may look like this:
 
 9. If additional attributes are sent in the token, add them to the additional attributes section.  On the left side is the name of the attribute in the token, and on the right side is the name of the attribute Qlik Sense will use.  In most cases it's easiest to leave them the same.
 
+>   ![jwt4](img/jwt4.png)
+>   *Refer with steps 10-11*
+
 10. Click on the Advanced menu option on the right side of the screen.
 
 11. In the Advanced section, options may be filled out to support a given scenario.
@@ -44,8 +54,16 @@ A sample jwt token may look like this:
     
 12. Click the Apply button.  The proxy reset message will appear.  Click Ok.
 
+    ![jwt5](img/jwt5.png)     ![jwt6](img/jwt6.png)
+
 13. On the right side of the screen, the Proxies menu option will appear.  Click on the Proxies menu option.
 
+    ![jwt7](img/jwt7.png)
+
 14. Click the Link button at the bottom of the page. The dialog box appears.  Select the proxy to link to the virtual proxy configuration and click the Link button.
+
+    ![jwt8](img/jwt8.png)
+    
+    ![jwt9](img/jwt9.png)
 
 15. The QMC will prompt for a refresh.
