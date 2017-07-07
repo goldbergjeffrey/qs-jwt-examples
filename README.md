@@ -3,4 +3,4 @@ Examples of JSON web token authentication with Qlik Sense.
 
 ## [JWT Virtual Proxy Configuration](docs/vpconfig.md)
 
-## [Node Examples](node-examples/README.md)
+## [Node Examples](docs/node-examples.md)

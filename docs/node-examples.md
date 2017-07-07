@@ -8,16 +8,15 @@
 <a name="general"></a>
 ## general information
 
-* Please make sure to import the Consumer Sales app (if you have not already) before running the mashup example.
+* Please make sure to import the Consumer Sales app (if you have not already) before running the mashup example.  Obtain the guid for the app.
 
-* Please follow the **[instructions}(../README.MD#vproxy)** on setting up a json web token virtual proxy in Qlik Sense before continuing with the node examples.
+* Please follow the **[instructions}(vpconfig.md)** on setting up a json web token virtual proxy in Qlik Sense before continuing with the node examples.
 
 * Each example requires some configuration in the corresponding js file and support files.  Please follow the configuration instructions below.
 
 ### general configuration
 
 > _jwtEncryptionKey_: Enter the path to the private key used to encrypt the json web token.
-
 
 > _hostname_: Hostname of Qlik Sense server where jwt token will be sent.
 
@@ -108,6 +107,15 @@ var config = {
     isSecure: true
 };
 ```
+
+Replace the guid for the application in the qlik.openApp call.  The mashup sample is built to use the Consumer Sales app (inluded with this repository).  Therefore, only the guid needs to be updated to reflect the guid for this app in a different Qlik Sense site.  
+
+*code snippet to update*
+```
+var app = qlik.openApp('07daff51-8263-4833-b0fd-31ad85fdb2a0', config);
+```
+
+> ***NOTE**: The object ids for charts may stay the same unless a different app is chosen to showcase the mashup capability.*
 
 ### Usage
 
