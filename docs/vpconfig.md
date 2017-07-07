@@ -1,4 +1,4 @@
-#Configure json web token virtual proxy
+# Configure json web token virtual proxy
 
 1. From the QMC, click on the Virtual proxies menu item in the Configure System section.
 
@@ -37,7 +37,9 @@ A sample jwt token may look like this:
 11. In the Advanced section, options may be filled out to support a given scenario.
     
     A. **For the mashup scenario**: Set the session cookie domain to the domain used for the mashup server and Qlik Sense server. By default , the Qlik Sense server will set the cookie domain to the fully qualified name of the white listed hostname the browser is accessing Qlik Sense.
+    
     B. **For the mashup scenario**: Set the access-control-allow-origin header to the uri of the mashup including the port.  This is required because the font Qlik Sense uses will not load due to cross-origin scripting prevention.  It is possible to set the header to * but this will allow all websites to access Qlik Sense resources cross site and may present a security risk.
+    
     C. **For all scenarios**: Add entries to the host white list for the hostname used for Qlik Sense Server connections and the hostname of the server the mashup is hosted on.  The latter is required for mashups to allow the websocket connection from the server the mashup is hosted on.
     
 12. Click the Apply button.  The proxy reset message will appear.  Click Ok.
