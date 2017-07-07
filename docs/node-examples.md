@@ -8,7 +8,7 @@
 <a name="general"></a>
 ## general information
 
-* Please make sure to import the Consumer Sales app (if you have not already) before running the mashup example.  Obtain the guid for the app.
+* Please make sure to import the Consumer Sales app (if you have not already) before running the mashup example.  The app is located in the qlik-apps folder at the root of the repository.  Obtain the guid for the app.
 
 * Please follow the **[instructions}(vpconfig.md)** on setting up a json web token virtual proxy in Qlik Sense before continuing with the node examples.
 
@@ -110,7 +110,6 @@ var config = {
 
 Replace the guid for the application in the qlik.openApp call.  The mashup sample is built to use the Consumer Sales app (inluded with this repository).  Therefore, only the guid needs to be updated to reflect the guid for this app in a different Qlik Sense site.  
 
-*code snippet to update*
 ```
 var app = qlik.openApp('07daff51-8263-4833-b0fd-31ad85fdb2a0', config);
 ```
